@@ -1,0 +1,6 @@
+<h4>Hello this is index method without erb extenstion</h4>
+
+<% @forum.each do |u| %>
+	<%= link_to u.title, forum_path(u.id) %>
+	<br />
+<% end %>

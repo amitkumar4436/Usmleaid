@@ -1,0 +1,18 @@
+<h3><%= @post.title %> </h3>
+<p>
+	<%= @post.body %>
+</p>
+
+<p>
+	<span><%= @post.user.email %></span>
+</p>
+
+<div class="replies">
+	<% @post.replies.each do |reply| %>
+		<p><%= reply.body %></p>
+	<% end %>
+</div>
+
+<div class="reply-form">
+	<%= render partial: 'replies/form' %>
+</div>

@@ -13,3 +13,23 @@
  *= require_tree .
  *= require_self
  */
+
+
+.posts{
+	background: #efefef;
+	padding:10px;
+}
+
+.posts td{
+	padding:20px;
+}
+
+ul li{
+	list-style: none;
+	border-bottom: 1px solid #777;
+	padding: 10px;
+}
+
+.replies{
+	background: #efefef;
+}
